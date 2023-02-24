@@ -128,6 +128,10 @@ class AlienInvasion:
             self._create_fleet()
             self.settings.increase_speed()
 
+        if collisions:
+            self.stats.score += self.settings.alien_points
+            self.sb.prep_score()
+
     def _update_aliens(self):
         # Check if the fleet is at an edge
         # Update the positions of all aliens in the fleet

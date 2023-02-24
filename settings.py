@@ -30,10 +30,13 @@ class Settings:
         # Initialize settings that change throughout the game
         self.ship_speed = 10
         self.bullet_speed = 5.0
-        self.alien_speed = 3.0
+        self.alien_speed = 2.0
 
         # fleet direction of 1 represents right; -1 represents left
         self.fleet_direction = 1
+
+        # Scoring
+        self.alien_points = 10
 
     def increase_speed(self):
         # Increase speed settings
